@@ -1,0 +1,162 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    background-image: linear-gradient(to right, rgba(135,206,250,1), rgba(135,206,250,0.3));
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.header {
+    height: 80px;
+    width: 100%;
+    padding: 20px 10px;
+    background-color: #63C3D1;
+}
+
+.header h1 {
+    text-align: left;
+    font-size: 30px;
+    margin-left: 50px;
+}
+
+#point-banner {
+    position: sticky;
+    top:0;
+    text-align: center;
+    padding: 5px 0;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width: 100%;
+    background-color: rgba(100, 100, 100, 0.1);
+}
+
+.content{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+}
+
+.divider {
+    width: 45%;
+    display: inline-block;
+}
+
+.doiley{
+    height: 500px;
+    background-image: url("doiley.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.upgrade {
+    width: 100%;
+    padding: 15px 25px;
+    font-size: 24px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+    margin-top: 55px;
+}
+
+.costspan{
+    font-size: 16px;
+    color: gainsboro;
+}
+
+.upgrade:hover {
+    background-color: #3e8e41;
+}
+.upgrade:active {
+    transform: translateY(4px);
+    box-shadow: 0 5px #999;
+    background-color: #3e8e41;
+}
+.upgrade:disabled {
+    opacity: 0.4;
+}
+
+
+.cookie-button {
+    cursor: pointer;
+    outline: none;
+    border: none;
+    border-radius: 50%;
+    background-image: url("cookie.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: rgba(255, 255, 255, 0);
+    width: 222px;
+    height: 222px;
+}
+.cookie-button:active{
+    transform: translateY(4px);
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #63C3D1;
+    height: 80px;
+}
+
+@media screen and (max-width: 600px) {
+    .content{
+        width: 100%;
+        display: block;
+    }
+    .divider {
+        width: 100%;
+
+    }
+    .doiley{
+        height: 300px;
+        background-size: contain;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+    }
+    .upgrade {
+        padding: 15px 25px;
+        font-size: 24px;
+        text-align: center;
+        cursor: pointer;
+        outline: none;
+        color: #fff;
+        background-color: #4CAF50;
+        border: none;
+        border-radius: 15px;
+        box-shadow: 0 5px #999;
+        margin-top: 5px;
+    }
+    .upgrade:active {
+        transform: translateY(4px);
+        box-shadow: 0 0 #999;
+        background-color: #3e8e41;
+    }
+    .first{
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+    .last{
+        margin-bottom: 85px;
+    }
+
+}
